@@ -7,8 +7,33 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-extrabold text-blue-700">Crazymapper</a>
+      <div class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+        <a href="#apropos" class="hover:text-blue-700 transition">À propos</a>
+        <a href="#projets" class="hover:text-blue-700 transition">Projets</a>
+        <a href="#contact" class="hover:text-blue-700 transition">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none">
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="menu" class="hidden md:hidden px-6 pb-4">
+      <a href="#apropos" class="block py-2 text-gray-700 font-semibold hover:text-blue-700 transition">À propos</a>
+      <a href="#projets" class="block py-2 text-gray-700 font-semibold hover:text-blue-700 transition">Projets</a>
+      <a href="#contact" class="block py-2 text-gray-700 font-semibold hover:text-blue-700 transition">Contact</a>
+    </div>
+  </nav>
+
   <!-- Hero section -->
-  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 shadow-lg">
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 shadow-lg pt-24">
     <div class="max-w-7xl mx-auto px-6 py-24 text-center text-white">
       <h1 class="text-5xl font-extrabold tracking-tight">Crazymapper</h1>
       <p class="mt-6 text-xl max-w-xl mx-auto">Géographe | Data Analyst en devenir | Expert OSM & SIG libre</p>
@@ -17,7 +42,7 @@
   </section>
 
   <!-- À propos -->
-  <section class="py-20 px-6 max-w-3xl mx-auto">
+  <section id="apropos" class="py-20 px-6 max-w-3xl mx-auto">
     <h2 class="text-3xl font-extrabold text-center mb-6">À propos de moi</h2>
     <p class="text-gray-700 leading-relaxed text-center text-lg">
       Géographe passionné par la donnée ouverte et la cartographie participative, j'ai plus de 10 ans d'expérience avec OpenStreetMap et les SIG libres. Aujourd'hui, je me forme à la data science pour devenir Data Analyst et valoriser les données au service du développement durable.
@@ -47,7 +72,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="py-20 px-6 max-w-md mx-auto text-center">
+  <section id="contact" class="py-20 px-6 max-w-md mx-auto text-center">
     <h2 class="text-3xl font-extrabold mb-6">Me contacter</h2>
     <p class="text-gray-700 mb-8 text-lg">Envie de collaborer ou d'en savoir plus ?</p>
     <a href="mailto:mapequilibre@gmail.com" class="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition">Envoyer un email</a>

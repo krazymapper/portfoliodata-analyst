@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Crazymapper</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Hero section -->
+  <section class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+      <h1 class="text-4xl font-bold text-blue-600">Crazymapper</h1>
+      <p class="mt-4 text-lg text-gray-600">Géographe | Data Analyst en devenir | Expert OSM & SIG libre</p>
+      <a href="#projets" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow hover:bg-blue-700">Voir mes projets</a>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-center mb-4">À propos de moi</h2>
+    <p class="text-gray-700 leading-relaxed text-center">
+      Géographe passionné par la donnée ouverte et la cartographie participative, j'ai plus de 10 ans d'expérience avec OpenStreetMap et les SIG libres. Aujourd'hui, je me forme à la data science pour devenir Data Analyst et valoriser les données au service du développement durable.
+    </p>
+  </section>
+
+  <!-- Projets -->
+  <section id="projets" class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center mb-10">Mes projets</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Projet 1 -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Accessibilité aux centres de santé</h3>
+          <p class="text-gray-600 mb-4">Analyse géospatiale via OSM et QGIS pour identifier les zones mal desservies en soins de santé.</p>
+          <a href="#" class="text-blue-600 hover:underline">Voir le projet</a>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Visualisation de données climatiques</h3>
+          <p class="text-gray-600 mb-4">Tableau de bord interactif sur les tendances climatiques régionales avec Python & Datawrapper.</p>
+          <a href="#" class="text-blue-600 hover:underline">Voir le projet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-16 px-6 max-w-xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">Me contacter</h2>
+    <p class="text-gray-700 mb-6">Envie de collaborer ou d'en savoir plus ?</p>
+    <a href="mailto:tonemail@example.com" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow hover:bg-blue-700">Envoyer un email</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-6 text-center text-gray-500 text-sm">
+    <div class="mb-4 flex justify-center space-x-6">
+      <a href="https://linkedin.com/mapequilibre" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-500 hover:text-blue-600">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.061-1.865-3.061-1.865 0-2.151 1.457-2.151 2.963v5.702h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.562 2.838-1.562 3.034 0 3.594 1.996 3.594 4.59v5.605z"/>
+        </svg>
+      </a>
+      <a href="https://facebook.com/mapequilibre" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-gray-500 hover:text-blue-600">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .732.592 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.672c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.59l-.467 3.622h-3.123v9.294h6.116c.732 0 1.324-.592 1.324-1.324v-21.35c0-.733-.592-1.325-1.324-1.325z"/>
+        </svg>
+      </a>
+      <a href="https://x.com/mapequilibre" target="_blank" rel="noopener noreferrer" aria-label="X" class="text-gray-500 hover:text-blue-600">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.949.564-2.005.974-3.127 1.195-.897-.959-2.178-1.559-3.594-1.559-2.723 0-4.928 2.206-4.928 4.928 0 .39.045.765.127 1.124-4.094-.205-7.725-2.165-10.158-5.144-.424.729-.666 1.577-.666 2.476 0 1.708.87 3.216 2.188 4.099-.807-.026-1.566-.247-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.317 0-.626-.03-.928-.086.627 1.956 2.444 3.379 4.6 3.419-1.68 1.318-3.809 2.105-6.102 2.105-.396 0-.787-.023-1.17-.067 2.179 1.397 4.768 2.213 7.557 2.213 9.054 0 14-7.496 14-13.986 0-.21 0-.423-.015-.633.962-.695 1.8-1.562 2.46-2.549z"/>
+        </svg>
+      </a>
+      <a href="mailto:mapequilibre@gmail.com" aria-label="Email" class="text-gray-500 hover:text-blue-600">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 4h16v16H4z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </a>
+    </div>
+    © 2025 Crazymapper · Propulsé par GitHub Pages
+  </footer>
+</body>
+</html>
